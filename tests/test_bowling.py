@@ -67,7 +67,7 @@ def test_scores_spare_from_previous_frame():
 
 def test_scores_game():
     game = bowling.Game()
-    for i in range(1, 21):
+    for i in range(0, 20):
         game.roll(4)
 
     expect(game.build_score()).to.eq(4 * 20)
